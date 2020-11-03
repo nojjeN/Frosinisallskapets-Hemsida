@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,300;0,700;1,400&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/main.css">
+        <script src="Javascript/main.js"></script>
+        
+        <title>Frosinisällskapets dragspelsförening</title>
+    </head>
+    <body>
+        <div id="nav-menu" class="overlay">
+            <button class="exit-mobile-menu-btn" onclick="closeMenu()">
+                <img src="img/exit-icon.png" alt="">
+            </button>
+            <div class="overlay-content">
+                <a href="index.html" class="top-item"><h1>Hem</h1></a>
+                <a href="about.html" class="top-item"><h1>Klubbinfo</h1></a>
+                <a href="executives.html" class="under-item"><h3>Styrelsen</h3></a>
+                <a href="statutes.html" class="under-item"><h3>Stadgar</h3></a>
+                <a href="membership.html" class="top-item"><h1>Bli medlem</h1></a>
+                <a href="events.html" class="top-item"><h1>Event</h1></a>
+                <a href="buskspel.html" class="under-item"><h3>Buskspel Ransäter</h3></a>
+                <a href="adopt.html" class="under-item"><h3>Adoptera en låt</h3></a>
+                <a href="" class="top-item"><h1>Galleri</h1></a>
+                <a href="contacts.html" class="top-item"><h1>Kontakt</h1></a>
+            </div>
+        </div>
+        <header class="events-header" id="header">
+            <div class="head-div">
+                <button class="hamburger-btn" onclick="openMenu()">
+                    <img src="img/hamburger-menu.png" alt="">
+                </button> 
+                <nav role='navigation' class="left-nav">
+                    <ul>
+                        <li><a href="index.html">Hem</a></li>
+                        <li><a href="about.html">Klubbinfo</a>
+                            <ul>
+                                <li><a href="executives.html">Styrelsen</a></li>
+                                <li><a href="statutes.html">Stadgar</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="membership.html">Bli medlem</a>
+                    </ul>
+                </nav> 
+                <a href="index.html"><img src="img/FS_logo_v2.png" class="logo" alt=""></a>  
+
+                <nav role='navigation' class="right-nav">
+                    <ul>
+                        <li><a href="contacts.html">Kontakt</a></li>
+                        <li><a href="events.html">Event</a>
+                            <ul>
+                                <li><a href="buskspel.html">Buskspel Ransäter</a></li>
+                                <li><a href="adopt.html">Adoptera en låt</a></li>                            
+                            </ul>
+                        </li>
+                        <li><a href="">Galleri</a>
+                    </ul>
+                </nav> 
+            </div>    
+            <div class="circle-wrapper">
+                <div class="circle"></div>
+            </div>
+
+            <div class="intro-message">
+                <h1>Event</h1>
+            </div>
+
+        </header>
+
+        <div class="mainPage">
+            <div class="eventsContent">
+                <div class="event">
+                    <img src="img/Balgspel.jpg" alt="">
+                    <div class="event_info">
+                        <h2>Bälgspel vid landsvägskanten</h2>
+                        <br>
+                        <p><b>Var:</b> Ransäters bygdegård</p>
+                        <br>
+                        <p><b>När:</b> 9/7 - 14/7 2020</p>
+                        <br>
+                        <p><b>Vad:</b> Till Bälgspelet i Ransäter kan FS medlemmar boka plats och bo tillsammans. 
+                            På torsdagen håller vi vårt traditionella buskspel som följs av sill-lunch på fredagen och 
+                            spelning i Gropen på lördagen. Vi har också under flera år haft årsmötet här. Frosinisällskapets 
+                            viktigaste träff under året.
+                        </p>
+                    </div>
+                </div>
+                <div class="event">
+                    <img src="img/hajstorp.jpg" alt="">
+                    <div class="event_info">
+                        <h2>Hajstorp dragspelstämmma</h2>
+                        <br>
+                        <p><b>Var:</b> Hajstorp Slusscafé</p>
+                        <br>
+                        <p><b>När:</b> 29/5 - 30/5 2020</p>
+                        <br>
+                        <p><b>Vad:</b> Den nuvarande styrelsen vill gärna locka FS medlemmar att träffas på ytterligare en stämma 
+                            utöver Ransäter under sommaren. Valet har fallit på Hajstorp-stämman vid Göta kanal i slutet på maj/början 
+                            på juni. Där hoppas vi kunna ses till sommaren 2021.
+                        </p>
+                    </div>
+                </div>
+                <div class="event">
+                    <img src="img/ragnar_sundqvist.jpg" alt="">
+                    <div class="event_info">
+                        <h2>Sundqvist-stämman</h2>
+                        <br>
+                        <p><b>Var:</b> Torsby</p>
+                        <br>
+                        <p><b>När:</b> Början av juli</p>
+                        <br>
+                        <p><b>Vad:</b> Helgen före Ransäter bjuder på Sundqvist-stämman i Torsby - definitivt en av de trevligaste dragspelsträffarna 
+                            i Sverige. Det bjuds på både seminarium och scenprogram av hög kvalitet. Man passar naturligtvis också på att besöka 
+                            Ragnar Sundqvist- museet.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>  
+          
+        <footer>
+            <object class="footer-object" data="footer.html"></object>
+        </footer>
+    </body>
+</html>

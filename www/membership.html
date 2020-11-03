@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,300;0,700;1,400&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/main.css">
+        <script src="Javascript/main.js"></script>
+        
+        <title>Frosinisällskapets dragspelsförening</title>
+    </head>
+    <body>
+        <div id="nav-menu" class="overlay">
+            <button class="exit-mobile-menu-btn" onclick="closeMenu()">
+                <img src="img/exit-icon.png" alt="">
+            </button>
+            <div class="overlay-content">
+                <a href="index.html" class="top-item"><h1>Hem</h1></a>
+                <a href="about.html" class="top-item"><h1>Klubbinfo</h1></a>
+                <a href="executives.html" class="under-item"><h3>Styrelsen</h3></a>
+                <a href="statutes.html" class="under-item"><h3>Stadgar</h3></a>
+                <a href="membership.html" class="top-item"><h1>Bli medlem</h1></a>
+                <a href="events.html" class="top-item"><h1>Event</h1></a>
+                <a href="buskspel.html" class="under-item"><h3>Buskspel Ransäter</h3></a>
+                <a href="adopt.html" class="under-item"><h3>Adoptera en låt</h3></a>
+                <a href="" class="top-item"><h1>Galleri</h1></a>
+                <a href="contacts.html" class="top-item"><h1>Kontakt</h1></a>
+            </div>
+        </div>
+
+        <header class="membership-header">
+            <div class="head-div">
+                <button class="hamburger-btn" onclick="openMenu()">
+                    <img src="img/hamburger-menu.png" alt="">
+                </button> 
+                <nav role='navigation' class="left-nav">
+                    <ul>
+                        <li><a href="index.html">Hem</a></li>
+                        <li><a href="about.html">Klubbinfo</a>
+                            <ul>
+                                <li><a href="executives.html">Styrelsen</a></li>
+                                <li><a href="statutes.html">Stadgar</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="membership.html">Bli medlem</a>
+                    </ul>
+                </nav> 
+                <a href="index.html"><img src="img/FS_logo_v2.png" class="logo" alt=""></a>  
+
+                <nav role='navigation' class="right-nav">
+                    <ul>
+                        <li><a href="contacts.html">Kontakt</a></li>
+                        <li><a href="events.html">Event</a>
+                            <ul>
+                                <li><a href="buskspel.html">Buskspel Ransäter</a></li>
+                                <li><a href="adopt.html">Adoptera en låt</a></li>                            
+                            </ul>
+                        </li>
+                        <li><a href="">Galleri</a>
+                    </ul>
+                </nav> 
+            </div>    
+            <div class="circle-wrapper">
+                <div class="circle"></div>
+            </div>
+
+            <div class="intro-message">
+                <h1>Bli medlem</h1>
+            </div>
+
+        </header>
+
+        <div class="mainPage">
+            <div class="membershipContent">
+                <div class="becomeMemberInfo">
+                    <br>
+                    <p>För dig som är över 25 år kostar medlemskap i Frosinisällskapet 100kr (medlemsavgift 2021) och för dig som är 25 år eller yngre är medlemskap gratis.
+                    </p>
+                    <br>
+                    <p>Medlemsavgift för dig som är över 25 år kan betalas via:
+                    </p>
+                    <br>
+                    <div class=payMethods>
+                        <ul>
+                            <li><p><strong>Bankgiro:</strong> Vårt bankgiro är 5362-6750, Frosinisällskapet.</p></li>
+                            <li><p><strong>Swish:</strong> Vårt swishnummer är 123 473 1071, alternativt kan du använda QR koden.</p></li>
+                        </ul>
+                        <br>
+                        <p><strong>OBS:</strong> Kom ihåg att uppge, <strong>namn</strong>, <strong>adress</strong> samt <strong>mail</strong> för samtliga betalningsalternativ!</p>
+                    </div>
+                    <br>
+                    <p>Du som är 25 år eller yngre behöver endast kontakta någon i styrelsen och anmäla ditt intresse.</p>
+                    <br>
+                    <h4>Kontaktuppgifter till vår styrelse kan du hitta under&nbsp;<a href="executives.html">STYRELSEN</a></h4>
+
+                </div>
+                <img src="img/swish_qr.png" alt="">
+<!--                 
+                <p>Medlem blir du genom att sätta in 50 kr (medlemsavgift 2020) på bankgiro 5362-6750, Frosinisällskapet. Kom ihåg att uppge, namn, adress samt mail.</p> 
+                <br>
+                <p>Är du 25 år eller yngre är medlemskapet gratis. Kontakta då endast någon i styrelsen för att anmäla ditt intresse.</p> 
+                <br> -->
+
+            </div> 
+            
+        </div>  
+          
+        <footer>
+            <object class="footer-object" data="footer.html"></object>
+        </footer>
+    </body>
+</html>

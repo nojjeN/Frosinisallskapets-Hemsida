@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,300;0,700;1,400&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/main.css">
+        <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js"></script>
+        <script src="Javascript/main.js"></script>
+        
+        <title>Frosinisällskapets dragspelsförening</title>
+    </head>
+    <body>
+        <div id="nav-menu" class="overlay">
+            <button class="exit-mobile-menu-btn" onclick="closeMenu()">
+                <img src="img/exit-icon.png" alt="">
+            </button>
+            <div class="overlay-content">
+                <h1><a href="index.html" class="top-item">Hem</a></h1>
+                <h1><a href="about.html" class="top-item">Klubbinfo</a></h1>
+                <h3><a href="executives.html" class="under-item">Styrelsen</a></h3>
+                <h3><a href="statutes.html" class="under-item">Stadgar</h3></a></h3>
+                <h1><a href="membership.html" class="top-item">Bli medlem</a></h1>
+                <h1><a href="events.html" class="top-item">Event</a></h1>
+                <a href="buskspel.html" class="under-item"><h3>Buskspel Ransäter</h3></a>
+                <a href="adopt.html" class="under-item"><h3>Adoptera en låt</h3></a>
+                <h1><a href="" class="top-item">Galleri</a></h1>
+                <h1><a href="contacts.html" class="top-item">Kontakt</a></h1>
+            </div>
+        </div>
+
+        <header class="contacts-header" id="header">
+            <div class="head-div">
+                <button class="hamburger-btn" onclick="openMenu()">
+                    <img src="img/hamburger-menu.png" alt="">
+                </button> 
+                <nav role='navigation' class="left-nav">
+                    <ul>
+                        <li><a href="index.html">Hem</a></li>
+                        <li><a href="about.html">Klubbinfo</a>
+                            <ul>
+                                <li><a href="executives.html">Styrelsen</a></li>
+                                <li><a href="statutes.html">Stadgar</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="membership.html">Bli medlem</a>
+                    </ul>
+                </nav> 
+                <a href="index.html"><img src="img/FS_logo_v2.png" class="logo" alt=""></a>  
+
+                <nav role='navigation' class="right-nav">
+                    <ul>
+                        <li><a href="contacts.html">Kontakt</a></li>
+                        <li><a href="events.html">Event</a>
+                            <ul>
+                                <li><a href="buskspel.html">Buskspel Ransäter</a></li>
+                                <li><a href="adopt.html">Adoptera en låt</a></li>                            
+                            </ul>
+                        </li>
+                        <li><a href="">Galleri</a>
+                    </ul>
+                </nav> 
+            </div>    
+            <div class="circle-wrapper">
+                <div class="circle"></div>
+            </div>
+
+            <div class="intro-message">
+                <h1>Kontakt</h1>
+            </div>
+
+        </header>
+
+        <div class="mainPage">
+            <div class="contactsContent">      
+                <!-- <h3>För frågor om Frosinisällskapet eller hemsidan kan du kontakta:</h3>
+                <br> -->
+                <div class="contactInfo">
+                    <p><strong>Telefon:</strong> +4672-941 90 15</p>
+                    <p><strong>Epost:</strong> <a class ="email_link" href="mailto:frosinisallskapet@gmail.com"> frosinisallskapet@gmail.com</a></p>
+                    <div class="contactInfo-bar"></div>
+                    <div class="social-media-contact">
+                        <a href="https://www.facebook.com/Frosinis%C3%A4llskapet-1265150390278066" target="_blank" rel="noopener"><img src="img/FB_icon_b.png" alt=""></a>
+                        <a href="https://www.instagram.com/frosinisallskapet/" target="_blank" rel="noopener"><img src="img/IG_icon_b.png"  alt=""></a>
+                        <a href="https://www.youtube.com/user/frosinisallskapet" target="_blank" rel="noopener"><img src="img/YT_icon_b.png" alt=""></a>  
+                    </div>
+                </div>
+                <br>
+                <br>
+                <!-- <div class="email-form">
+                    <input name="Namn" class="name" type="text" placeholder="Namn">
+                    <br>
+                    <br>
+                    <input name="E-post" class="email_adress" type="text" placeholder="E-post">
+                    <br>
+                    <br>
+                    <textarea name="Meddelande" class="message" type="text" rows="6" placeholder="Meddelande"></textarea>
+                    <br>
+                    <br>
+                    <button type="submit" class="submit_button" onclick="Email.send()">Skicka</button> 
+                <br>
+                </div> -->
+
+                <form id="email-form" class="email-form" action="https://formspree.io/f/xvovraav" method="POST">
+                    <input id="name" name="Namn" class="name" type="text" placeholder="Namn" onclick="resetEmailForm(0)">
+                    <br>
+                    <br>
+                    <input id="mail" name="E-post" class="email_adress" type="text" placeholder="E-post" onclick="resetEmailForm(1)">
+                    <br>
+                    <br>
+                    <textarea id="message" name="Meddelande" class="message" type="text" rows="6" placeholder="Meddelande"onclick="resetEmailForm(2)"></textarea>
+                    <br>
+                    <br>
+                    <button type="button" class="submit_button" onclick="validateEmail()">Skicka</button> 
+                </form>
+
+                <!-- <input type="button" value="Send Email" onclick="Email.send()"> -->
+            </div> 
+        </div>
+
+        <footer>
+            <object class="footer-object" data="footer.html"></object>
+        </footer>
+    </body>
+</html>
