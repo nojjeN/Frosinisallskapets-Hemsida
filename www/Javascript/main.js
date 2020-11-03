@@ -1,5 +1,43 @@
 console.log("This is working");
 
+
+function fillThumbnails() {
+    var folder = "photos/";
+
+    $.ajax({
+        url : folder,
+        success: function (data) {
+            $(data).find("a").attr("href", function (i, val) {
+                if( val.match(/\.(jpe?g|png|gif)$/) ) { 
+                    var gallery = document.getElementById("gallery");
+                    const thumbnail = document.createElement('div');
+                    thumbnail.className = "photo-thumbnail";
+                    console.log(folder + " " + val);
+                    thumbnail.innerHTML = '<button>' + '<img src=' + val + '></button>';
+                    gallery.appendChild(thumbnail);
+                } 
+            });
+        }
+    });
+
+
+    for(i=0; i<folder.length; i++) {
+        console.log(folder[i]);
+        // var gallery = document.getElementById("gallery");
+        // const thumbnail = document.createElement('div');
+        // thumbnail.className = "photo-thumbnail";
+        // thumbnail.innerHTML = '<button><img src="photos/' + folder[i].name + ' alt=""></button>';
+        // gallery.appendChild(thumbnail);
+    }
+
+    // // console.log("filling");
+    // // var gallery = document.getElementById("gallery");
+    // // const thumbnail = document.createElement('div');
+    // // thumbnail.className = "photo-thumbnail";
+    // // thumbnail.innerHTML = '<button><img src="img/Elin.jpg" alt=""></button>';
+    // // gallery.appendChild(thumbnail);
+}
+
 var name = document.getElementById("name");
 var mail = document.getElementById("mail");
 var message = document.getElementById("message");
@@ -7,8 +45,6 @@ var message = document.getElementById("message");
 function openMenu() {
     var menu = document.getElementById("nav-menu");
     menu.style.width = "100%";
-
-    
 }
 
 function closeMenu() {

@@ -7,10 +7,11 @@
         <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,300;0,700;1,400&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="css/main.css">
         <script src="Javascript/main.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js"></script>
         
         <title>Frosinisällskapets dragspelsförening</title>
     </head>
-    <body>
+    <body onload="fillThumbnails()">
         <div id="nav-menu" class="overlay">
             <button class="exit-mobile-menu-btn" onclick="closeMenu()">
                 <img src="img/exit-icon.png" alt="">
@@ -71,39 +72,7 @@
         </header>
 
         <div class="mainPage">
-            <div class="galleryContent">
-                <div class="photo-thumbnail">
-                    <button>
-                        <img src="img/Elin.jpg" alt="">
-                    </button>
-                </div>
-                <div class="photo-thumbnail">
-                    <button>
-                        <img src="img/Elin.jpg" alt="">
-                    </button>
-                </div>
-                <div class="photo-thumbnail">
-                    <button>
-                        <img src="img/Elin.jpg" alt="">
-                    </button>
-                </div>
-                <div class="photo-thumbnail">
-                    <button>
-                        <img src="img/Elin.jpg" alt="">
-                    </button>
-                </div>
-                <div class="photo-thumbnail">
-                    <button>
-                        <img src="img/Elin.jpg" alt="">
-                    </button>
-                </div>
-                <div class="photo-thumbnail">
-                    <button>
-                        <img src="img/Elin.jpg" alt="">
-                    </button>
-                </div>
-                
-                
+            <div class="galleryContent" id="gallery">
             </div>
         </div>  
           
