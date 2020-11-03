@@ -857,6 +857,35 @@ nav a:hover {
   line-height: 140%;
 }
 
+/* GALLERY PAGE */
+.galleryContent {
+  padding-left: 80px;
+  padding-right: 80px;
+  padding-top: 80px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.photo-thumbnail {
+  height: 100px;
+  width: 150px;
+  margin: 10px;
+}
+
+.photo-thumbnail button {
+  height: 100%;
+  width: 100%;
+  border-style: solid;
+  border-color: black;
+  border-width: 1px;
+}
+
+.photo-thumbnail img {
+  height: 100%;
+}
+
 
 
 /* =============
