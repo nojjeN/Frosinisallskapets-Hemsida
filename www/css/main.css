@@ -859,8 +859,8 @@ nav a:hover {
 
 /* GALLERY PAGE */
 .galleryContent {
-  padding-left: 80px;
-  padding-right: 80px;
+  padding-left: 150px;
+  padding-right: 150px;
   padding-top: 80px;
   display: flex;
   flex-wrap: wrap;
